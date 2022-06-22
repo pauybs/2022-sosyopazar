@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+* {
+  font-family: 'Rubik', sans-serif !important;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+a {
+  text-decoration: none;
+  color: inherit
+}
+
+.navbar {
+  background-color: #ffffff;
+  border-radius: 0 0 20px 20px;
+  padding: 0 20px;
+  margin-bottom: 2rem;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 2rem 0;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.navbarNav {
+  width: 100%;
+  min-height: 62px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbarNav .navButton {
+  background-color: rgba(169, 146, 125, 0.25);
+  border: none;
+  cursor: pointer;
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+
+.navbarNav .nav-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.registerButton {
+  background-color: #5E503F !important;
+  color: #ffffff;
+}
+
+.logo {
+  height: 100%;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+.defaultSection {
+  width: 100%;
+  min-height: 10vh;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.loginSection {
+  display: flex;
+}
+
+.shopsSection {
+  width: 100%;
+  min-height: 10vh;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: .25rem;
+}
+
+.subTitle {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.loginRegisterBtn {
+  background-color: #22333B;
+  color: #ffffff;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .5s;
+  border: 2px solid transparent;
+}
+
+.loginRegisterBtn:hover {
+  background-color: transparent;
+  color: #22333B;
+  border-color: #22333B;
+}
+
+.loginRegisterForSellerBtn {
+  background-color: transparent;
+  color: #22333B;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: .5rem;
+  transition: .5s;
+  opacity: .75;
+}
+
+.loginRegisterForSellerBtn:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.customInput {
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  box-shadow: 0px 0px 4px rgba(94, 80, 63, 0.6);
+  border: none;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.searchInput {
+  height: 2rem;
+  border-radius: 1rem;
+  width: 40%;
+  border: 1px solid #777777;
+  padding: 0 2rem 0 1rem;
+  margin-bottom: 2rem;
+}
+
+.searchInputIcon {
+  position: absolute;
+  margin-left: -10rem;
+}
+
+.favShops {
+  width: 90%;
+}
+
+.cardImg {
+  height: 7rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  -webkit-box-shadow: inset 0px -50px 50px -15px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px -50px 50px -15px rgba(0, 0, 0, 0.75);
+}
+
+.cardFollow {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.cardRating {
+  position: absolute;
+  bottom: 0;
+  left: 5.5rem;
+}
+
+.cardFollowers {
+  position: absolute;
+  top: 0;
+  left: 5.5rem;
+  display: flex;
+  font-size: .5rem;
+  display: flex;
+  align-items: center;
+}
+
+.cardBody {
+  min-height: 7rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardUserImg {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 3rem;
+  position: absolute;
+  left: 1.5rem;
+  top: -1.5rem;
+  border: 3px solid #ffffff;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.discoverCardUserImg {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 3rem;
+  border: 3px solid #ffffff;
+}
+
+.cardTitle {
+  margin-top: 2rem;
+  margin-bottom: .25rem;
+}
+
+.cardTitle h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.cardText {
+  width: 94%;
+  font-size: 14px;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  padding: .5rem 0;
+  margin-bottom: 3%;
+  border-radius: 1rem;
+}
+
+.cardText .MuiGrid-container {
+  width: 90%;
+}
+
+.store-cover {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.store-cover::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 90%;
+  background: linear-gradient(0, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0) 75%);
+  z-index: 1;
+}
+
+.store-profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+
+.product-card {
+  height: 225px;
+  width: 100%;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.product-card-image-list img {
+  object-fit: cover;
+}
